@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <title>Heritage Sites</title>
+    <style>
+        body{
+            background-image: url("data:image/jpeg;base64,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");
+            background-size:cover;
+        }
+        .navtag{
+            width: auto;
+            height:50px;
+            background-color: rgb(101, 58, 4);
+            color: antiquewhite;
+            vertical-align: middle;
+            line-height: 40px;
+        }
+        .nav{
+            background-color:rgb(101, 58, 4);
+            color: antiquewhite;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .nav:hover{
+            background-color: #efaa56;
+        }
+        .dropbtn {
+            background-color:rgb(101, 58, 4);
+            color: antiquewhite;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:#efaa56;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f0be82;}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            color:rgb(29, 1, 1)
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: rgb(229, 160, 76);
+        }
+       .searchtext{
+        border-radius:10px;
+        background-color: rgb(244, 210, 152);
+       }
+        h1{
+            color: antiquewhite;
+            font-size:70px;
+            margin:50px;
+            text-align: center;
+            animation-name: heading;
+            animation-duration:2s;
+            animation-iteration-count:infinite;
+            transition:color;
+        }
+        @keyframes heading{
+            10%{font-size:70px;color:rgb(213, 175, 125);}  
+            20%{font-size:70px;color:rgb(223, 166, 90);}       
+            30%{font-size:70px;color:rgb(213, 175, 125);}  
+        } 
+        hr{
+            color:antiquewhite;
+        }
+        .divintro{
+            background-image: url("histng1.JPG");
+            background-size:cover;
+        }
+        .intro{
+            margin:70px;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            font-weight: bold;
+            text-shadow: 0px 0px 1px  black;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .data{
+            width:400px;
+            height:400px;
+            padding:2px;
+            border-width: 10px;
+            background-color: rgb(231, 160, 74);
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px gray;
+        }
+        img{
+            
+            width:520px;
+            height:400px; 
+            margin:auto;
+            margin:50px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px gray;
+        }
+        h2{
+            text-decoration: underline;
+            text-align: center;
+            border-color: black;
+            background-color:rgb(243, 176, 60);
+            color:rgb(0, 0, 0);
+            font-size: 25px;
+            text-shadow: 10px 10px 10px rgb(145, 85, 11);
+            height: 40px;
+            margin-top: 50px;
+            padding-top: 10px;
+            border-radius: 20px;
+        }
+        p{
+            text-align: center;
+            margin:20px;
+            padding-top:50px;
+            color:rgb(28, 16, 1);
+            font-size: 17px;
+            text-align:justify;
+        }
+        .botform{
+            border-radius: 10px;;
+        }
+        .botsubmit{
+            height: 30px;
+            width:80px;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        .bottomform{
+            position: relative;
+            bottom:0%;
+            background-color:  rgb(101, 58, 4);
+            color: aliceblue;
+            font-size: medium;
+            word-spacing: 20px;
+            width:100%;
+            height:60px;
+            vertical-align: middle;
+            line-height: 50px;
+            position: fixed;
+            left:0px;
+            bottom: 0px ;
+            vertical-align: middle;
+            line-height: 60px;
+        }
+        button{
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <div class="navtag">
+    <button class="nav">Home</button>
+    <div class="dropdown">
+        <button class="dropbtn">India &nbsp;<i class="fa-solid fa-caret-down"></i></button>
+        <div class="dropdown-content">
+            <a>Geography</a>
+            <a>Historical Places</a>
+            <a>Tourist Spots</a>
+        </div>
+    </div>
+    <button class="nav">Blogs</button>
+    <a class="nav">Search <i class="fa-solid fa-magnifying-glass">&nbsp;&nbsp;</i><input type="text" class="searchtext" placeholder="Enter here:"></a>
+    </div>
+
+   <h1>Historical Places of India</h1>
+   <hr>
+   <div class="divintro">
+    <p  class="intro">India's history is a rich tapestry woven over millennia, marked by diverse cultures, empires, and civilizations. It began with the Indus Valley Civilization around 2500 BCE, known for its advanced urban planning and trade. The Vedic period followed, characterized by the development of Hinduism and the composition of the Vedas.<br><br><br>
+    The rise of major empires such as the Maurya and Gupta empires saw significant advancements in science, art, and philosophy. The medieval period featured the establishment of Islamic sultanates and the Mughal Empire, which left a lasting impact on Indian culture and architecture. The British colonial period began in the 18th century and lasted until 1947, shaping modern India's political and economic landscape. India gained independence on August 15, 1947, and has since grown into a vibrant democracy and a major player on the global stage.<br><br><br>
+    </p>
+   </div>
+   <hr>
+    <table>
+        <h2 class="a">Golden Temple, Amritsar</h2>
+        <tr>
+            <td><img src="https://i.pinimg.com/originals/9b/6b/0f/9b6b0fbc0099a4f2f63480c44f3cc640.jpg"></td>
+            <td>
+                <div class="data">
+                    <p>
+                        The Golden Temple, or Harmandir Sahib, is a sacred Sikh shrine located in Amritsar, Punjab, India. Known for its stunning golden facade and beautiful architecture, it is surrounded by the Amrit Sarovar, a large holy pool. The temple complex includes the Akal Takht, the highest seat of authority for the Khalsa.<br>
+                        <br>A symbol of universal brotherhood, the Golden Temple welcomes people of all faiths. It is famous for its langar, a community kitchen that serves free meals to thousands daily. The temple embodies Sikh principles of equality, service, and charity, making it a significant cultural and religious site</p>
+                    
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <h2 class="b">City Palace, Udaipur</h2>
+        <tr>
+            <td><img src="https://t3.ftcdn.net/jpg/04/07/92/88/360_F_407928839_Ao1mzTQPyWjGLCjMr5awzqbeOFA3nzKo.jpg"></td>
+            <td>
+                <div class="data">
+                    <p>The City Palace in Udaipur, Rajasthan, is a magnificent example of Rajput architecture. Built over centuries by the Mewar dynasty, the palace blends medieval, European, and Chinese styles with its intricate balconies and vibrant mosaics. <br><br><br>
+                        Inside, visitors can explore various structures like the Amar Vilas and Sheesh Mahal, adorned with mirror work and frescoes. The palace museum showcases artifacts and paintings, providing insight into the royal lifestyle. Overlooking Lake Pichola, the palace offers breathtaking views, making it a must-see in Udaipur.</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <h2 class="c">Gateway of India, Mumbai</h2>
+        <tr>
+            <td><img src="https://t3.ftcdn.net/jpg/02/00/55/94/360_F_200559473_wEDZgxSDPPjQfgX3sQqXcjz4ph1a79Yt.jpg"></td>
+            <td>
+                <div class="data">
+                    <p>The Gateway of India in Mumbai, built in 1924 to honor King George V and Queen Mary's visit, is a striking monument combining Hindu and Muslim architectural styles. Made of yellow basalt, its grand archway and detailed carvings reflect the era of British rule in India.<br><br><br>
+                        Historically significant, it marked the end of British colonial rule in 1948 with the departure of the last British troops. Today, it remains a popular tourist spot and gathering place, offering views of the Arabian Sea and a vib</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <h2 class="d">Sun Temple, Konark</h2>
+        <tr>
+            <td><img src="https://t4.ftcdn.net/jpg/05/45/40/15/360_F_545401584_r4Fs1INFeiCzvz3Mi4Tk7cCqQNZp1dQn.jpg"></td>
+            <td>
+                <div class="data">
+                    <p>The Sun Temple in Konark, Odisha, India, is a 13th-century temple dedicated to the sun god Surya. Famous for its chariot-like structure with intricately carved stone wheels, it showcases exceptional Kalinga architecture and is a UNESCO World Heritage Site.<br>
+                        <br><br>The temple symbolizes Surya's chariot, pulled by seven horses, representing the days of the week. Its sculptures depict various aspects of life and mythology, highlighting India's rich cultural heritage. The Sun Temple stands as a significant religious and architectural marvel.</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <h2 class="e">Mysore Palace, Mysore</h2>
+        <tr>
+            <td><img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSgnjYxX4M6vaO7xkiODJU0VwjyaNtKpQKZHiVPmexqetdh9nHIds3TK41qcvRPDrb30N5368uj2e7qUHincW1BEjRZ6ed-UV2-zANA3A"><td>
+            <td>
+                <div class="data">
+                    <p>Mysore Palace, located in Mysore, Karnataka, is a stunning example of Indo-Saracenic architecture, blending Hindu, Muslim, and European styles. Completed in 1912, the palace features ornate interiors, grand halls, and beautiful stained glass windows, reflecting the opulence of the Wadiyar dynasty.<br><br>
+                        A major attraction during the annual Dussehra festival, the palace is renowned for its dazzling illumination and historical significance. It remains a symbol of royal heritage and a popular tourist destination, drawing visitors with its rich history and architectural splendor.</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <form class="bottomform">
+        &nbsp;
+        Name:<input type="text" class="botform"> &nbsp;&nbsp;
+        Email:<input type="email" class="botform">&nbsp;&nbsp;
+        Contact-No.:<input type="number" class="botform">&nbsp;&nbsp;
+        <button class="botsubmit" width="10px">Submit</button>
+    </form>
+</body>
+</html>
